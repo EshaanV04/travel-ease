@@ -1,0 +1,31 @@
+create database travelmanagementsystem;
+
+show databases;
+
+use travelmanagementsystem;
+
+create table account(name varchar(20), username varchar(20), password varchar(20), security varchar(100), answer varchar(50));
+
+show tables;
+
+select * from account;
+
+create table customer(username varchar(20), id varchar(30), number varchar(30), name varchar(30), gender varchar(20), country varchar(30), address varchar(50), email varchar(30), phone varchar(15));
+
+select * from customer;
+
+create table bookpackage(username varchar(20), package varchar(30), persons varchar(20), id varchar(30), number varchar(30),  phone varchar(15), price varchar(20));
+
+select * from bookpackage;
+
+create table hotel(name varchar(30), costpp varchar(20), ac varchar(10), foodincluded varchar(10));
+
+insert into hotel values('JW Marriot Hotel', '3400', '1000', '1700');
+insert into hotel values('Sahara Star Hotel', '4400', '1600', '1800');
+insert into hotel values('The Taj Hotel', '3000', '1200', '1500');
+
+select * from hotel;
+
+create table bookhotel(username varchar(20), hotel varchar(30), persons varchar(10), days varchar(10), ac varchar(10), food varchar(10), id varchar(30), number varchar(30),  phone varchar(15), price varchar(20));
+
+select * from bookhotel;
